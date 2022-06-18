@@ -1,0 +1,103 @@
+@use "./scss/" as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: $main-color $body-bg;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $main-color;
+      border-radius: 5px;
+      
+}
+
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 1.5;
+
+    background-color: $body-bg;
+    color: $txt-color;
+
+    @include mobile {
+        margin-bottom: 3rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.active-tab {
+    color: #1976d2 !important;
+    background-color: #0e0e0e !important;
+  }
+
+  #fade_in {
+    animation: fadeIn 0.5s ease-out;
+    -webkit-animation: fadeIn 0.5s ease-out;
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -o-transform: translateY(-15px);
+}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+   
+}
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+
+    &:after {
+      font-size: 32px;
+    }
+    
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .lazyLoad {
+    width: inherit;
+    height: inherit;
+    background-color: #1f1f1f;
+  }
+
+
+

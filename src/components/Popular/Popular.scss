@@ -1,0 +1,16 @@
+@use "../../scss/" as *;
+
+.SliderOuter {
+  margin-bottom: 35px;
+  padding-left: 110px;
+
+  @media screen and (max-width: $tablet-width) {
+    padding: 0 10px;
+  }
+}
+
+.Title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}

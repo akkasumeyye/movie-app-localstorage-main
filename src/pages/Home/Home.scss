@@ -1,0 +1,27 @@
+@use "../../scss/" as *;
+
+.content {
+    @media screen and (max-width: $tablet-width) {
+        padding-bottom: 80px;
+    }
+
+    .footer{
+        padding: 50px 20px 50px 110px;
+
+  @media screen and (max-width: $tablet-width) {
+    padding: 50px 20px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #767676;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-size: 32px;
+    color: #767676;
+  }
+    }
+}

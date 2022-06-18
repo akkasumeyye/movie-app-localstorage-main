@@ -1,0 +1,17 @@
+@use "../../scss/" as *;
+
+.loadingWrapper{
+    width:100%;
+    height: 100%;
+
+    div{
+        height: 100vh;
+        padding-left: 110px;
+
+        @include flex (center,center, unset);
+
+        @media screen and (max-width: $tablet-width) {
+            padding: 0;
+        }
+    }
+}
