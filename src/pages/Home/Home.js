@@ -17,7 +17,7 @@ const Home = () => {
         <TopRated />
         <div className="footer">
           <p>Build on React • 2022</p>
-          <a href="https://github.com/oluroyleseyler">
+          <a href="https://github.com/akkasumeyye">
             <AiFillGithub />
           </a>
         </div>
